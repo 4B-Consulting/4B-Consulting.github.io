@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sh="http://www.w3.org/ns/shacl#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="Nba306ca9a8d34599bd9a36ac0bd657d4">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+    <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minInclusive>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:or rdf:resource="https://brickschema.org/schema/BrickShape#NumbericValue"/>
+    <sh:path rdf:resource="https://brickschema.org/schema/Brick#value"/>
+    <sh:in rdf:nodeID="N2e6dead439ef4140a454ef452331792d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://4B-Consulting.github.io/ontology#TransmissionLossShape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+    <rdf:type rdf:resource="https://brickschema.org/schema/Brick#EntityPropertyValue"/>
+    <rdf:subClassOf rdf:resource="https://brickschema.org/schema/BrickShape#ValueShape"/>
+    <sh:property rdf:nodeID="Nfc377982d45b46da9fabedd6098231f9"/>
+    <sh:property rdf:nodeID="Nba306ca9a8d34599bd9a36ac0bd657d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://4B-Consulting.github.io/ontology#SpecificLossShape">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+    <rdf:type rdf:resource="https://brickschema.org/schema/Brick#EntityPropertyValue"/>
+    <rdf:subClassOf rdf:resource="https://brickschema.org/schema/BrickShape#ValueShape"/>
+    <sh:property rdf:nodeID="Nfa56d8bb25ef4fcdb1eee295d5227a7e"/>
+    <sh:property rdf:nodeID="N1cd8d985fa5744bd871c6303ba959d9d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://4B-Consulting.github.io/ontology#hasTransmissionLoss">
+    <rdf:type rdf:resource="https://brickschema.org/schema/Brick#EntityProperty"/>
+    <rdfs:label>Transmission loss of the entity</rdfs:label>
+    <skos:definition>Transmission loss of the entity</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc377982d45b46da9fabedd6098231f9">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+    <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minInclusive>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:path rdf:resource="https://brickschema.org/schema/Brick#hasUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1cd8d985fa5744bd871c6303ba959d9d">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+    <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minInclusive>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:or rdf:resource="https://brickschema.org/schema/BrickShape#NumbericValue"/>
+    <sh:path rdf:resource="https://brickschema.org/schema/Brick#value"/>
+    <sh:in rdf:nodeID="Na8e85ece01404dacb7e16dcfae7862f3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e6dead439ef4140a454ef452331792d">
+    <rdf:first rdf:resource="http://qudt.org/vocab/unit/http://qudt.org/vocab/unit/W"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfa56d8bb25ef4fcdb1eee295d5227a7e">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+    <sh:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sh:minInclusive>
+    <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+    <sh:path rdf:resource="https://brickschema.org/schema/Brick#hasUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8e85ece01404dacb7e16dcfae7862f3">
+    <rdf:first rdf:resource="http://qudt.org/vocab/unit/W-PER-K"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://4B-Consulting.github.io/ontology#hasSpecificLoss">
+    <rdf:type rdf:resource="https://brickschema.org/schema/Brick#EntityProperty"/>
+    <rdfs:label>Specific loss of the entity</rdfs:label>
+    <skos:definition>Specific loss of the entity</skos:definition>
+  </rdf:Description>
+</rdf:RDF>
